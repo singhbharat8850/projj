@@ -2,6 +2,7 @@
 body {
 
   margin: 1em auto;
+  background-color:#00264d;
 
 }
 
@@ -41,4 +42,133 @@ div, form {
 
   width: 500px;
 
+}
+body{
+}
+
+header{
+  color:white;
+  height:25px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+
+}
+
+ul li{
+  display: inline-block;
+  margin-top:25px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  border : 1px solid #fff;
+}
+
+.logo img{
+  float:left;
+  width:150px;
+  height:auto;
+}
+
+.main{
+  max-width:1200px;
+  margin:auto;
+  
+}
+
+ul li.active{
+  background-color:#fff;
+  color:#000;
+}
+
+.mundra{
+  margin-left:auto;
+  margin-right:auto;
+  color:black;
+  text-align:center;
+}
+
+.buttons{
+  width:80px;
+  background-color:red;
+  border:none;
+  margin-left:80px;
+}
+.btns{
+    width:80px;
+  background-color:red;
+  border:none;
+}
+
+.boxed {
+  border: none ;
+  background-color:green;
+  margin-left:700px;
+  width:150px;
+  height:60px;
+  margin-bottom:10px;
+}
+
+.boxedred {
+  border: none ;
+  background-color:red;
+  margin-left:700px;
+  width:150px;
+  height:60px;
+  margin-bottom:10px;
+}
+
+.boxedblue {
+  border: none ;
+  background-color:blue;
+  margin-left:700px;
+  width:150px;
+  height:60px;
+}
+.linediagram {
+  border: none ;
+  background-color:#ff3333;
+  width:100px;
+  height:25px;
+}
+.leftmargins{
+    margin-left:150px;
+}
+.linediagram1 {
+  border: none ;
+  background-color:#ff3333;
+  width:120px;
+  height:25px;
+}
+.carton{
+display:inline-block;
+}
+
+.boxs1{
+  background-color:4d4dff;
+  margin-left:30px;
+  margin-right:400px;
+  margin-top:60px;
+  margin-bottom:20px;
+}
+.boxedblack {
+  
+  border: none ;
+  background-color:red;
+  width:150px;
+  height:60px;
+  float:right;
+  text-align: right;
+  justify-items:top;
 }
