@@ -63,6 +63,20 @@
             </form>
         </div>
 
-        
+        <div class="demo">
+            <div id="amperes" class="speedometer"></div>
+            <form id="amperes-controls" class="controls">
+                Animate update:  <input type="button" name="update" value="start" /><br/>
+                Animate rescale: <input type="text" name="maxvalue" value="200" />
+                <input type="button" name="rescale" value="rescale" /><br />
+                Operating mode:
+                <label>
+                    <input type="radio" name="mode" value="incremental"  /> incremental
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="random" checked="checked"/> random
+                </label>
+            </form>
+        </div>
     </body>
 </html>
