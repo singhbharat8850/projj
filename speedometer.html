@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css href="css/speedometer.css">
+
+            
+</head>
+	<body>
+		<header>
+			<div class="main">
+          <div class="logo">
+                       <img src="https://www.bing.com/images/search?view=detailV2&id=59F29FC2BBAF77C1E4526DBC92056CBE7A8195F2&thid=OIP.elnfR_m6sBArVEDxRPdmSQHaHa&mediaurl=https%3A%2F%2Fsssip.files.wordpress.com%2F2014%2F06%2Fhappy1.jpg&exph=1024&expw=1024&q=Happy+Images&selectedindex=0&ajaxhist=0&vt=0&eim=1,6">
+                       </div>
+          <div><ul>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Date</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Home</a></li>						
+				</ul></div>
+			</div>	
+		</header>
+      <section>                   
+        	
+      <div>
+          <button class="buttons" type="button"><h3>5L/2L Line</h3></button>
+                               <button class="btns" type="button"><h3>5000ml</h3></button>
+      </div>
+            <div class="boxed">
+    Total output
+</div>
+                              <div class="boxedred">
+    Total PDT
+</div>
+<div class="boxedblue">
+    Total Power
+</div>
+                    
+    </section>
+                      <section>
+                      <button class="linediagram leftmargins">
+                     <h5>Line Diagram</h5>                  </button>
+                      <button class="linediagram ">
+                     <h5>Line Overviewer</h5>                  </button>
+                                                  <button class="linediagram ">
+                     <h5>Line Loss Analysis</h5>                  </button>
+                                                                              <button class="linediagram ">
+                     <h5>Line  Status</h5>                  </button>
+                                                                                                          <button class="linediagram1 ">
+                     <h5>Start/Stop/Time/Accu</h5>                  </button>
+                      </section>
+
+<section>
+          <div class="">Accident</div>                                                                                                                             </section>                                                                                                                               
+	</body>
+		       <script type="text/javascript" src="xcanvas.js"></script>
+
+        <script type="text/javascript" src="tbe.js"></script>
+
+
+
+        <script type="text/javascript" src="digitaldisplay.js"></script>
+
+        <script type="text/javascript" src="speedometer.js"></script>
+
+        <script type="text/javascript" src="themes/default.js"></script>
+
+
+
+        <script type="text/javascript" src="example.js"></script>
+
+        <script type="text/javascript" src="controls.js"></script>
+
+        <script type="text/javascript">
+
+          var volts, amperes;
+
+
+
+          // Explicit onready listener for modern browsers. If you use a JS framework,
+
+          // you should replace this code with your toolkit's "onReady" helpers (e.g.
+
+          // $(document).ready() on jQuery, Event.observe('dom:loaded') on prototype,
+
+          // and so on.
+
+          document.addEventListener ("DOMContentLoaded", function() {
+
+            document.removeEventListener ("DOMContentLoaded", arguments.callee, false);
+
+
+
+            // Check out configuration and API on GitHub Wiki:
+
+            // http://wiki.github.com/vjt/canvas-speedometer
+
+            volts = new Speedometer ('volts', {theme: 'default'});
+
+            volts.draw ();
+
+            volts.controls = new Controls ('volts-controls', {speedometer: volts});
+
+            volts.addEventListener ('speedometer:animateend', function () {
+
+              volts.controls.start ();
+							    });
+
+            volts.controls.start ();
+
+
+
+          }, false);
+
+        </script>
+
+</html>
